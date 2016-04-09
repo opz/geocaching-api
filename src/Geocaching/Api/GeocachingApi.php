@@ -741,7 +741,7 @@ class GeocachingApi extends AbstractGeocachingApi
 
         $get_params['trackingNumber'] = $params['trackingNumber'];
         if (array_key_exists('trackableLogCount', $params)) {
-            $get_params['trackableLogCount'] = (int) (boolean) $params['trackableLogCount'];
+            $get_params['trackableLogCount'] = (int) $params['trackableLogCount'];
         }
 
         return $this->getRequest(__FUNCTION__, $get_params);
